@@ -1,4 +1,440 @@
-h1 {
-    color: red;
-    border: 1px solid red;
+@import "normalize.css";
+
+@font-face {
+    font-family: "Open Sans";
+    src: local("OpenSans-Regular"), url(fonts/OpenSans-Regular.woff) format("woff"),
+    url(fonts/OpenSans-Regular.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: local("OpenSans-Bold"), url(fonts/OpenSans-Regular.woff) format("woff"),
+    url(fonts/OpenSans-Regular.woff) format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.page {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #0f0d0e;
+}
+
+/*General-styles*/
+
+.link {
+
+}
+
+.heading {
+    text-transform: uppercase;
+    line-height: 1.821875rem;
+}
+
+.tag {
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: #b59f5b;
+    line-height: 2.5rem;
+    font-weight: bold;
+}
+
+.data {
+    font-size: 0.75rem;
+    line-height: 2.5rem;
+}
+
+.main-section-header {
+
+}
+
+.content-container {
+
+}
+
+.header {
+
+}
+
+.content-container__item {
+
+}
+
+.button-link {
+    font-weight: bold;
+    line-height: 2.5rem;
+    color: #ffffff;
+    background-color: #b59f5b;
+}
+
+.input {
+    background-color: #f4f7f6;
+}
+
+/*Header-styles*/
+
+.main-header {
+    background-color: #666666;
+}
+
+.main-header__heading {
+    font-size: 2.8125rem;
+    color: #ffffff;
+    line-height: 4.6875rem;
+}
+
+.logo-link {
+
+}
+
+.logo {
+
+}
+
+.main-menu {
+
+}
+
+.nav-links {
+
+}
+
+.nav-links__item {
+
+}
+
+.nav-links__link {
+    font-size: 0.8125rem;
+
+}
+
+.main {
+
+}
+
+/*Trand-section styles*/
+
+.section {
+
+}
+
+.section__header {
+
+}
+
+.section-heading {
+    font-size: 1.25rem;
+    line-height: 1.821875rem;
+}
+
+.section__content-container {
+}
+
+.section__item {
+    background-color: #999999;
+}
+
+.link-container {
+
+}
+
+.link-container__interior-block {
+
+}
+
+.link-container__name {
+    font-size: 1.25rem;
+    color: #ffffff;
+    line-height: 1.5rem;
+}
+
+.link-container__tag {
+
+}
+
+/*Snippets-section styles*/
+
+.section-articles {
+
+}
+
+.articles {
+
+}
+
+.articles__item {
+
+}
+
+.snippet {
+
+}
+
+.snippet__header {
+
+}
+
+.snippet__tags {
+
+}
+
+.snippet__tag {
+
+}
+
+.snippet__link {
+
+}
+
+.snippet__heading {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.snippet__author-data-container {
+}
+
+.snippet__data {
+    color: #888888;
+}
+
+.snippet__author {
+    font-size: 0.75rem;
+    color: #000000;
+    line-height: 2.5rem;
+    font-weight: bold;
+
+}
+
+.snippet__text {
+    font-size: 0.9375rem;
+    line-height: 1.375rem;
+}
+
+.snippet__img {
+
+}
+
+/*Aside-section styles*/
+
+.aside {
+
+}
+
+.label {
+
+}
+
+.new-posts {
+
+}
+
+.aside__header {
+
+}
+
+.aside__text{
+    font-size: 0.875rem;
+}
+
+.aside__content-container {
+
+}
+
+.content-container__item {
+
+}
+
+.article-link {
+
+}
+
+.article-link__image {
+
+}
+
+.article-link__data {
+ color: #000000;
+}
+
+.article-link__name {
+    line-height: 1.125rem;
+}
+
+.search {
+
+}
+
+.search-form {
+
+}
+
+.search-form__label {
+
+}
+
+.search-form__input {
+
+}
+
+.search-form__button {
+
+}
+
+.search-form__img {
+
+}
+
+.subscribe {
+
+}
+
+.subscribe-form {
+
+}
+
+.subscribe-form__label {
+
+}
+
+.subscribe-form__input {
+
+}
+
+.subscribe-form__button {
+}
+
+.tags {
+
+}
+
+.tag-container {
+}
+
+.tag-container__item {
+
+}
+
+.tag-container__tag {
+    color: #0f0d0e;
+}
+
+.topics {
+
+}
+
+.topics-container {
+
+}
+
+.topics-container__item {
+
+}
+
+.topics-container__topic {
+
+}
+
+.topic-container__link {
+    font-weight: bold;
+}
+
+.topic-container__name {
+    font-size: 0.875rem;
+    color: #000000;
+}
+
+.topic-container__posts-quantity {
+    font-size: 0.75rem;
+    line-height: 2.30125rem;
+    color: #b59f5b;
+}
+
+.shop {
+
+}
+
+.shop__item {
+
+}
+
+.shop__image {
+
+}
+
+.shop__card {
+
+}
+
+.shop__name {
+    font-size: 0.98125rem;
+    color: #000000;
+}
+
+.shop__text {
+    color: #0f0d0e;
+}
+
+.shop__additional-link {
+    color: #b59f5b;
+}
+
+.shop__price-container {
+    font-weight: bold;
+    color: #0f0d0e;
+}
+
+.shop__old-price {
+    font-size: 0.875rem;
+    text-decoration: line-through;
+}
+
+.shop__price {
+    font-size: 1.25rem;
+
+}
+
+.shop__link {
+
+}
+
+/*Footer styles*/
+
+.footer {
+
+}
+
+.social-media {
+    background-color: #f4f7f6;
+}
+
+.social-media__item {
+
+}
+
+.social-media__logo {
+
+}
+
+.copyright {
+
+}
+
+.copyright__phrase {
+    font-size: 0.75rem;
+    line-height: 2.5rem;
+    color: #999999;
+    font-weight: bold;
+}
+
+/*Модификаторы*/
+
+.search-form__button_disable {
+
 }
