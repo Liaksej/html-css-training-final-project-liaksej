@@ -540,6 +540,8 @@ a:visited {
         /*text-align: center;*/
     /*padding-top: 10px;*/
     /*vertical-align: center;*/
+    vertical-align: -4px;
+    text-align: center;
 }
 
 .subscribe {
@@ -583,16 +585,19 @@ a:visited {
 .tag-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 5px;
+    justify-items: left;
     justify-content: left;
+    align-content: space-between;
+    height: 102px;
 }
 
 .tag-container__item {
     color: #0f0d0e;
     border: 3px #f4f3f1 solid;
-    padding: 2px 13px 4px 13px;
-    align-self: center;
-    justify-self: center;
+    padding: 3px 13px;
+    /*align-self: center;*/
+    /*vertical-align: center;*/
 }
 
 .tag-container__tag {
@@ -658,8 +663,9 @@ a:visited {
 
 .shop__content-container {
     display: flex;
-    align-content: flex-start;
+    justify-items: center;
     justify-content: space-between;
+    width: 100%;
 
 }
 
@@ -670,7 +676,6 @@ a:visited {
 .shop__item {
     position: relative;
     box-sizing: border-box;
-    /*height: 440px;*/
     width: 347px;
     display: flex;
     flex-flow: column;
