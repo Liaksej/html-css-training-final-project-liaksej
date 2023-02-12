@@ -20,13 +20,15 @@
 
 /*General-styles*/
 
+
 .page {
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     color: #0f0d0e;
+    width: 100%;
     max-width: 1660px;
-    min-width: 1200px;
+    /*!*min-width: 1200px;*!  Включить на последнем этапе для десктопной версии */
     margin: 0 auto;
 }
 
@@ -91,7 +93,9 @@ a .heading:hover {
 
 .input {
     height: 48px;
-    width: 270px;
+    min-width: 270px;
+    max-width: 330px    ;
+    width: 330px;
     outline: 0;
     outline-offset: 0;
     border: 0;
@@ -102,40 +106,67 @@ a .heading:hover {
     background-color: #f4f7f6;
 }
 
+@media screen and (min-width: 1200px) {
+    .input {
+        width: 270px;
+    }
+}
+
 input:focus {
     outline: 1px solid #b59f5b;
 }
 
 .content-column {
     /*width: 70.48192771%;*/
-    max-width: 70.48192771%;
-    min-width: 1170px;
+    max-width: 91.66666667%;
+    /*!*min-width: 1170px;*! Включить на последнем этапе для десктопной версии*/
     margin: 0 auto;
 }
 
+@media screen and (min-width: 1200px) {
+    .content-column {
+        /*width: 70.48192771%;*/
+        max-width: 70.48192771%;
+        min-width: 1170px;
+        margin: 0 auto;
+    }
+}
+
 .p-text {
-    font-size: 0.9375rem;
-    line-height: 1.375rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
 }
 
 /*Header-styles*/
 
 .main-header {
     position: relative;
-    height: 450px;
-    min-height: fit-content;
+    height: 630px;
     width: 100%;
-    background-image: url(../images/banner-bg.jpg);
-    background-position-y: -1px;
-    background-position-x: center;
+    /*min-height: fit-content;*/
+    max-width: 100%;
+    background-image: url(../images/banner-mobile.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1200px) {
+    .main-header {
+        height: 450px;
+        min-height: fit-content;
+        max-width: 100%;
+        background-image: url(../images/banner-bg.jpg);
+        background-position-y: -1px;
+        background-position-x: center;
+        background-repeat: no-repeat;
+    }
 }
 
 .main-header:before {
     content: "";
     position: absolute;
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -143,7 +174,7 @@ input:focus {
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     box-sizing: border-box;
     margin: 29px 14.75903614% 0 14.75903614%;
     text-align: center;
@@ -151,9 +182,9 @@ input:focus {
 
 .main-header__heading {
     margin: 100px auto 0;
-    width: 60%;
-    font-size: 2.8125rem;
-    line-height: 4.6875rem;
+    /*width: 60%;*/
+    font-size: 1.625rem;
+    line-height: 2.25rem;
     text-align: center;
     color: #ffffff;
 }
@@ -187,7 +218,7 @@ input:focus {
 
 .section-heading {
     padding-top: 56px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.821875rem;
     text-align: center;
 }
@@ -205,6 +236,7 @@ input:focus {
 .section__content-container {
     min-height: 320px;
     display: flex;
+    flex-wrap: wrap;
     gap: 4px;
 }
 
@@ -291,8 +323,8 @@ input:focus {
 
 .link-container__name {
     margin-top: 7px;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
     color: #ffffff;
 }
 
@@ -305,6 +337,7 @@ input:focus {
 
 .two-columns-section {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 51px;
     margin: 0 auto;
 }
@@ -336,6 +369,7 @@ input:focus {
 
 .snippet {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     /*height: 294px;*/
 }
@@ -356,8 +390,8 @@ input:focus {
 
 .snippet__heading {
     margin-top: 7px;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
 
 .snippet__author-data-container {
@@ -384,8 +418,13 @@ input:focus {
 /*Aside-section styles*/
 
 .aside {
-    width: 23.16239316%;
     margin-top: -53px;
+}
+
+@media screen and (min-width: 1200px) {
+    .aside {
+        width: 23.16239316%;
+    }
 }
 
 .aside__header {
@@ -569,8 +608,10 @@ input:focus {
 
 .shop__content-container {
     display: flex;
-    justify-items: center;
+    flex-wrap: wrap;
+    /*justify-items: center;*/
     justify-content: space-between;
+    align-content: center;
     width: 100%;
 
 }
@@ -586,11 +627,12 @@ input:focus {
 .shop__image {
     margin: 0 auto;
     width: 300px;
+    position: absolute;
+    top: -173px;
 }
 
 .shop__card {
-    position: absolute;
-    top: 173px;
+
     display: flex;
     flex-wrap: wrap;
     align-content: start;
@@ -606,7 +648,7 @@ input:focus {
     height: 1.25rem;
     width: 100%;
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.0625rem;
     color: #000000;
 }
 
@@ -640,14 +682,14 @@ input:focus {
 .shop__old-price {
     justify-self: end;
     font-size: 0.875rem;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
     text-decoration: line-through;
 }
 
 .shop__price {
     justify-self: start;
     font-size: 1.25rem;
-    line-height: 0.95rem;
+    line-height: 1.5rem;
 }
 
 .shop__link {
@@ -655,7 +697,7 @@ input:focus {
     width: 140px;
     align-self: end;
     font-size: 0.875rem;
-    line-height: 3.1rem;
+    line-height: 2.5rem;
     text-align: center;
 }
 
