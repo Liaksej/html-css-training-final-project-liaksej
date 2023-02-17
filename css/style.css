@@ -467,7 +467,7 @@ input:focus {
 }
 
 .main-header_elements-container {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
