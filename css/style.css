@@ -167,8 +167,6 @@ input:focus {
     z-index: 100;
 }
 
-
-
 .banner__toggle {
     display: none;
 }
@@ -178,23 +176,19 @@ input:focus {
 }
 
 .banner__close {
-        position: absolute;
-        top: -33px;
-        right: 1px;
-        width: 27px;
-        opacity: 60%;
-    }
+    position: absolute;
+    top: -33px;
+    right: 1px;
+    width: 27px;
+}
 
 @media screen and (min-width: 1200px) {
     .banner__close {
-        position: absolute;
         top: -26px;
         left: 95.9%;
-        width: 18px;
-        z-index: 999;
+        width: unset;
     }
 }
-
 
 .banner__close:hover {
     cursor: pointer;
@@ -204,6 +198,8 @@ input:focus {
     position: absolute;
     width: 100%;
     height: 100%;
+    left: 0;
+    top: 0;
     z-index: 101;
 }
 
@@ -216,7 +212,6 @@ input:focus {
     width: 331px;
     top: 56px;
     left: calc(50% - (331px/2));
-    margin: 0 auto;
     background-color: #fff;
     z-index: 102;
     padding: 0 25px 30px 25px;
@@ -261,6 +256,7 @@ input:focus {
 @media screen and (min-width: 1200px) {
     .banner .banner-header ::after {
         margin-left: 125px;
+        margin-top: unset;
         /*margin-bottom: 200px;*/
     }
 }
@@ -275,8 +271,10 @@ input:focus {
     margin-top: 24px;
 }
 
-.banner__row:nth-child(3) {
-    margin-top: 21px;
+@media screen and (max-width: 640px) {
+    .banner__row:nth-child(3) {
+        margin-top: 21px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -284,7 +282,6 @@ input:focus {
         margin-top: 24px;
     }
 }
-
 
 .banner__phrase {
     display: inline-block;
@@ -297,6 +294,7 @@ input:focus {
     .banner__phrase {
         height: unset;
         margin-bottom: 10px;
+        line-height: unset;
     }
 }
 
@@ -305,8 +303,8 @@ input:focus {
 }
 
 @media screen and (min-width: 1200px) {
-    .banner__phrase:nth-child(1) {
-        margin-bottom: 8px;
+    .banner__phrase:nth-child(2) {
+        margin-bottom: 6px;
     }
 }
 
@@ -345,8 +343,6 @@ input:focus {
     }
 }
 
-
-
 .radio-text::before {
     content: "";
     display: inline-block;
@@ -370,18 +366,17 @@ input:focus {
 
     .radio-text::before {
         width: 17px;
-        height: 18px;
+        height: 20px;
+        vertical-align: -5px;
+        margin-left: 1px;
         margin-right: 5px;
         background-size: 17px;
     }
 }
 
-
-
 .banner__radio_checked:checked ~ .radio-text::before {
     background-image: url(../svg/form-circle.svg);
 }
-
 
 .banner__textarea {
     box-sizing: border-box;
