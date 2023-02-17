@@ -160,68 +160,168 @@ input:focus {
 .banner-section {
     content: "";
     position: absolute;
-    display: block;
+    display: none;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 100;
-    text-align: center;
+}
+
+
+
+.banner__toggle {
+    display: none;
+}
+
+.banner__toggle:checked + .banner-section {
+    display: block;
+}
+
+
+.banner__close {
+    position: absolute;
+    top: -26px;
+    left: 95.9%;
+}
+
+.banner__close:hover {
+    cursor: pointer;
+}
+
+.banner__background-close {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 101;
 }
 
 .banner {
     position: fixed;
-    /*display: flex;*/
-    /*flex-flow: column;*/
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
     height: 590px;
     width: 390px;
     top: calc(50% - (513px/2));
     left: calc(50% - (390px/2));
     background-color: #fff;
-    /*z-index: 101;*/
+    z-index: 102;
+    padding: 0 30px 30px 30px;
+}
+
+.banner .banner-header {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+
+.banner .banner-header__heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 47px;
+    margin-left: 5px;
+}
+
+.banner .banner-header ::after {
+    margin-left: 125px;
+    /*margin-bottom: 200px;*/
+
 }
 
 .banner__row :not(.banner__row .button) {
-    font-size: 0.75rem;
+    font-size: 0.81rem;
+
 }
 
 .banner__row {
     display: block;
-    margin-top: 28px;
+    margin-top: 24px;
+
 }
 
 .banner__phrase {
-    display: block;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.banner__phrase:nth-child(1) {
+    margin-bottom: 8px;
 }
 
 .banner__input {
+    box-sizing: border-box;
+    width: 100%;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: url(../svg/form-arrows.svg);
     background-repeat: no-repeat;
-    background-position: right 5% center;
-    background-size: 3.7%;
+    background-position: right 13px center;
+    background-size: 2.9%;
+    margin-bottom: 5px;
+    padding: 1px 0 0 19px;
 }
 
-.banner__radio {
+.radio-item {
     display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 7px;
+}
+
+.radio-text::before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+
+    background-image: url(../svg/form-empty-circle.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 17px;
+    vertical-align: middle;
+}
+
+.banner__radio_checked:checked ~ .radio-text::before {
+    background-image: url(../svg/form-circle.svg);
 }
 
 .banner__textarea {
+    box-sizing: border-box;
     height: 132px;
-    width: 330px;
+    width: 100%;
     resize: none;
+    padding: 21px 0 0 21px;
 }
 
 .banner__textarea, .banner__input {
     border-bottom: 1px solid #ffffff;
 }
 
-.banner__textarea:focus {
+.banner__textarea:focus, .banner__input:focus, .banner__radio:focus ~ .radio-text::before {
     outline: 1px solid #b59f5b;
+}
+
+.visually-hidden   {
+  position: fixed;
+  transform: scale(0);
+}
+
+.feedback-form .banner__button {
+    margin-top: 0;
+    font-size: 0.875rem;
 }
 
 .banner__textarea:hover, .banner__input:hover {
     border-bottom: 1px #ebe7d7 solid;
+    cursor: pointer;
+}
+
+.banner__row:hover, .radio-item:hover, .banner__button:hover {
+    cursor: pointer;
 }
 
 
@@ -346,6 +446,7 @@ input:focus {
 
 .logo-link {
     height: 41px;
+
 }
 
 .logo {

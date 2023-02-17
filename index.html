@@ -8,11 +8,16 @@
 </head>
 <body class="page">
     <div class="banner-section">
+        <input type="checkbox" id="banner" class="banner__toggle">
+        <label for="banner" class="banner__background-close"></label>
         <div class="banner">
+            <label for="banner" class="banner__close">
+                <img src="svg/form-x.svg" alt="X" width="18">
+            </label>
+            <header class="banner-header section__header">
+                <h2 class="heading banner-header__heading section-heading">ВАШ ФИДБЕК</h2>
+            </header>
             <form class="feedback-form">
-                <header class="banner-header section__header">
-                    <h2 class="heading banner-header__heading section-heading">ВАШ ФИДБЭК</h2>
-                </header>
                 <label class="banner__row">
                     <span class="banner__phrase">Как часто вы заходите на сайт?</span>
                     <select class="banner__input input" required>
@@ -25,13 +30,13 @@
                 </label>
                 <label class="banner__row">
                     <span class="banner__phrase">Вы подписаны на e-mail рассылку?</span>
-                    <label>
-                        <input type="radio" class="banner__radio" required>
-                        Да
+                    <label class="radio-item">
+                        <input type="radio" class="banner__radio banner__radio_checked visually-hidden" name="answer">
+                        <span class="radio-text">Да</span>
                     </label>
-                    <label>
-                        <input type="radio" class="banner__radio" required>
-                        Нет
+                    <label class="radio-item">
+                        <input type="radio" class="banner__radio banner__radio_checked visually-hidden" name="answer">
+                        <span class="radio-text">Нет</span>
                     </label>
                 </label>
                 <label class="banner__row">
@@ -39,7 +44,7 @@
                     <textarea type="" class="banner__textarea input" placeholder="Может, больше рецептов?"></textarea>
                 </label>
                 <div class="banner__row">
-                    <button class="button banner__button subscribe-form__button" type="submit">ОТПРАВИТЬ</button>
+                    <button class="button banner__button subscribe-form__button button-link" type="submit">ОТПРАВИТЬ</button>
                 </div>
             </form>
         </div>
@@ -47,9 +52,9 @@
     <div class="max-width">
         <header class="header main-header">
             <div class="main-header_elements-container">
-                <a class="link logo-link" href="#">
+                <label class="link logo-link button" for="banner">
                     <img class="logo" src="svg/noemi-logo.svg" alt="Логотип">
-                </a>
+                </label>
                 <nav class="main-menu">
                     <input id="hamburger-menu__toggle" type="checkbox" />
                     <label class="hamburger-menu__btn" for="hamburger-menu__toggle">
