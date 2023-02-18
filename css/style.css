@@ -1707,7 +1707,7 @@ input:focus {
 .topic-container__posts-quantity {
     font-size: 0.75rem;
     line-height: 2.30125rem;
-    vertical-align: -12;
+    vertical-align: 0;
     color: #b59f5b;
 }
 
