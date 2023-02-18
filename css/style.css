@@ -177,11 +177,11 @@ input:focus {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.banner__toggle {
+._hidden {
     display: none;
 }
 
-.banner__toggle:checked + .banner-section {
+._hidden:checked + .banner-section {
     display: block;
 }
 
