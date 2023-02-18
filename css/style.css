@@ -997,16 +997,17 @@ input:focus {
         margin: 0 0 15px 20px;
         padding-bottom: 29px;
         padding-left: 29px;
-        padding-top: 31px;
+        padding-top: 29px;
         width: calc(100% - 74px);
     }
 }
 
 @media screen and (min-width: 1200px) {
     .link-container__text-container {
-        padding-bottom: 34px;
+        padding-bottom: 33px;
         padding-left: 32px;
         padding-top: 34px;
+        margin-bottom: 16px;
     }
 
     .link-container__block-1 .link-container__text-container {
@@ -1374,10 +1375,18 @@ input:focus {
         margin-bottom: 28px;
     }
 
+    .aside .section-heading::after {
+        padding-top: 5px;
+    }
+
     @media screen and (min-width: 1200px) {
         .aside__header {
             margin-top: -10px;
             margin-bottom: 10px;
+        }
+
+        .aside .section-heading::after {
+            padding-top: unset;
         }
     }
 }
@@ -1397,6 +1406,12 @@ input:focus {
     padding-bottom: 5px;
 }
 
+@media screen and (min-width: 641px) and (max-width: 1199px) {
+    .aside__text::after {
+        padding-bottom: 0;
+    }
+}
+
 .aside-content-container {
     display: flex;
     flex-flow: column;
@@ -1413,7 +1428,7 @@ input:focus {
 
 @media screen and (min-width: 1120px) {
     .aside-content-container {
-        margin-top: 27px;
+        margin-top: 28px;
         gap: 22px;
         /*justify-content: space-between;*/
     }
@@ -1464,7 +1479,7 @@ input:focus {
 
 @media screen and (min-width: 1200px) {
     .search {
-        margin-top: 61px;
+        margin-top: 60px;
     }
 }
 
@@ -1697,6 +1712,8 @@ input:focus {
 }
 
 /*Shop*/
+
+
 
 @media screen and (min-width: 1200px) {
     .shop {
