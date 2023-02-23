@@ -33,7 +33,7 @@
 }
 
 .max-width {
-    max-width: 1660px;
+    /*max-width: 1660px;*/
     margin: 0 auto;
 }
 
@@ -511,7 +511,7 @@ input:focus {
 .main-header {
     position: relative;
 
-    height: 639px;
+    /*height: 639px;*/
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -753,6 +753,7 @@ input:focus {
 
         text-align: center;
         list-style: none;
+        text-transform: uppercase;
 
         background-color: #b59f5b;
         box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
@@ -828,6 +829,7 @@ input:focus {
 
     .nav-links__link, .nav-links__link:link, .nav-links__link:visited {
         font-size: 0.8125rem;
+        text-transform: uppercase;
 
         color: #ffffff;
     }
@@ -1905,6 +1907,7 @@ input:focus {
     margin: 0;
 
     font-size: 1.0625rem;
+    text-transform: uppercase;
 
     color: #000000;
 }
@@ -1982,6 +1985,7 @@ input:focus {
 
     font-size: 0.875rem;
     line-height: 2.803125rem;
+    text-transform: uppercase;
 }
 
 .shop__link:link, .shop__link:visited {
