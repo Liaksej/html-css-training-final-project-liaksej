@@ -967,11 +967,11 @@ input:focus {
 
 @media screen and (min-width: 1200px) {
     .section__item:first-child, .section__item:last-child {
-        width: 410px;
+        /*width: 410px;*/
     }
 
     .section__item:nth-child(2), .section__item:nth-child(3) {
-        width: 414px;
+        /*width: 414px;*/
     }
 }
 
@@ -1135,7 +1135,7 @@ input:focus {
 
 @media screen and (min-width: 1200px) {
     .link-container__name {
-        width: 100%;
+        width: 96%;
         margin-top: 7px;
 
         font-size: 1.25rem;
@@ -1869,8 +1869,8 @@ input:focus {
 
 .shop__image {
     margin: 0 auto;
-    width: auto;
     max-width: 100%;
+    height: auto;
 }
 
 .shop__card {
