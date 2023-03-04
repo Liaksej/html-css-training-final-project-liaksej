@@ -1682,17 +1682,12 @@ input:focus {
 .tag-container__item .tag {
     display: block;
     margin: 0;
-    padding: 10px 2px;
+    padding: 10px 3px;
 
     font-size: 0.75rem;
+    line-height: 0;
 
     color: #0f0d0e;
-}
-
-@media screen and (min-width: 1200px) {
-    .tag-container__item {
-        /*padding: 3px 13px;*/
-    }
 }
 
 .tag-container__item:hover {
@@ -1701,7 +1696,7 @@ input:focus {
 
 @media screen and (min-width: 1200px) {
     .tag-container__tag {
-        line-height: 0;
+
     }
 }
 
