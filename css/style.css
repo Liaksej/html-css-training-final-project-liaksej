@@ -1711,6 +1711,12 @@ input:focus {
     border: 0;
 }
 
+.tags-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
 .topics .header {
     margin-bottom: -12px;
 
