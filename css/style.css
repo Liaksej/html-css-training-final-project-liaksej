@@ -1842,14 +1842,14 @@ input:focus {
 .shop__content-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    /*justify-content: left;*/
     gap: 26px;
     width: 100%;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
     .shop__content-container {
-        justify-content: left;
+        /*justify-content: left;*/
         gap: 22px;
     }
 }
@@ -1873,6 +1873,7 @@ input:focus {
 @media screen and (min-width: 641px) and (max-width: 1199px) {
     .shop__item {
         margin: 5px 0 0;
+        width: calc(50% - (23px/2));
     }
 }
 
@@ -1910,7 +1911,7 @@ input:focus {
 @media screen and (min-width: 641px) and (max-width: 1199px) {
     .shop__card {
         box-sizing: border-box;
-        max-width: 337px;
+        /*max-width: 337px;*/
         min-height: 264px;
     }
 }
