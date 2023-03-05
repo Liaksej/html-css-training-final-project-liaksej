@@ -1184,8 +1184,6 @@ input:focus {
 @media screen and (min-width: 641px) and (max-width: 1199px) {
     .section-articles {
         margin: 0;
-        flex-basis: calc(100% - (35px*3) - 270px)
-        /*width: auto;*/
     }
 }
 
@@ -1407,7 +1405,7 @@ input:focus {
     }
 }
 
-@media screen and (min-width: 641px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
     .snippet__link {
         display: block;
         width: 100%;
