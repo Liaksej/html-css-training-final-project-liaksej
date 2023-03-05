@@ -2027,8 +2027,8 @@ input:focus {
     margin-top: 3px;
 }
 
-.instagram {
-    margin-top: 1px;
+.social-media__item img {
+    max-width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
