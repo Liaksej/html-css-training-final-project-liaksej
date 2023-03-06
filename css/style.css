@@ -240,6 +240,15 @@ input:focus {
     background-color: #fff;
 }
 
+@media screen and (max-width: 360px) {
+    .banner {
+        left: 14px;
+        width: calc(100% - 28px);
+        height: auto;
+        marign: 0 auto;
+    }
+}
+
 @media screen and (min-width: 641px) {
     .banner {
         top: calc(50% - (526px/2));
@@ -247,6 +256,8 @@ input:focus {
 
         height: 596px;
         width: 390px;
+        max-width: unset;
+        margin: 0;
         padding: 0 30px 30px 30px;
     }
 
@@ -260,12 +271,12 @@ input:focus {
     }
 }
 
-@media screen and (orientation: landscape) and (max-height: 760px) {
-    .banner {
-        position: absolute;
-        top: 82px;
-    }
-}
+/*@media screen and (orientation: landscape) and (max-height: 760px) {*/
+/*    .banner {*/
+/*        position: absolute;*/
+/*        top: 82px;*/
+/*    }*/
+/*}*/
 
 .banner .banner-header {
     height: auto;
@@ -399,8 +410,8 @@ input:focus {
     -moz-appearance: none;
     background-image: url(../svg/form-arrows.svg);
     background-repeat: no-repeat;
-    background-position: bottom 15px right 15px;
-    background-size: 3.5%;
+    background-position: bottom 14px right 14px;
+    background-size: 11px;
 }
 
 @media screen and (min-width: 641px) {
