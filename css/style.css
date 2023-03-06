@@ -1890,7 +1890,7 @@ input:focus {
     }
 }
 
-.shop__image, .shop__image img {
+.shop__image {
     margin: 0 22px;
     width: calc(100% - (22px*2));
     max-width: 100%;
@@ -1906,6 +1906,7 @@ input:focus {
     margin: -35px auto 0;
     padding: 50px 19px 26px;
     border: 3px solid rgba(181, 159, 91, 0.6);
+    flex-basis: 100%;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
