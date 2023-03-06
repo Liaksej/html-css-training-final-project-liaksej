@@ -245,13 +245,12 @@ input:focus {
         left: 14px;
         width: calc(100% - 28px);
         height: auto;
-        marign: 0 auto;
     }
 }
 
 @media screen and (min-width: 641px) {
     .banner {
-        top: calc(50% - (526px/2));
+        top: 222px;
         left: calc(50% - (390px/2));
 
         height: 596px;
@@ -263,20 +262,13 @@ input:focus {
 
     @media screen and (min-width: 1200px) {
         .banner {
-            top: calc(50% - (513px/2));
+            top: 229px;
             left: calc(50% - (390px/2) + 1px);
 
             height: 590px;
         }
     }
 }
-
-/*@media screen and (orientation: landscape) and (max-height: 760px) {*/
-/*    .banner {*/
-/*        position: absolute;*/
-/*        top: 82px;*/
-/*    }*/
-/*}*/
 
 .banner .banner-header {
     height: auto;
@@ -977,16 +969,6 @@ input:focus {
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .section__item:first-child, .section__item:last-child {
-        /*width: 410px;*/
-    }
-
-    .section__item:nth-child(2), .section__item:nth-child(3) {
-        /*width: 414px;*/
-    }
-}
-
 .link-container__interior {
     background-size: cover;
     background-position: bottom;
@@ -1052,12 +1034,12 @@ input:focus {
     align-self: end;
     justify-content: center;
     justify-self: center;
-    width: calc(100% - 61px);
+    width: calc(100% - 55px);
     max-height: calc(100% - 90px);
     margin: 0 15px 15px;
     padding-top: 28px;
     padding-bottom: 26px;
-    padding-left: 25px;
+    padding-left: 19px;
     border: 3px solid rgba(181, 159, 91, 0.6);
 }
 
@@ -1107,7 +1089,7 @@ input:focus {
 }
 
 .link-container__name {
-    width: 78%;
+    width: 90%;
     margin-top: 9px;
 
     font-size: 1rem;
@@ -1128,7 +1110,9 @@ input:focus {
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
     .link-container__name {
-        width: 90%;
+        display: block;
+        width: 81%;
+        margin-block-start: 0.5em;
 
         font-size: 1.0625rem;
         line-height: 1.375rem;
@@ -1195,6 +1179,8 @@ input:focus {
 @media screen and (min-width: 641px) and (max-width: 1199px) {
     .section-articles {
         margin: 0;
+        margin-top: 1px;
+
     }
 }
 
@@ -1207,7 +1193,7 @@ input:focus {
 .articles {
     display: flex;
     flex-flow: column;
-    gap: 35px;
+    gap: 33px;
     width: 100%;
 }
 
@@ -1215,8 +1201,7 @@ input:focus {
     .articles {
         flex-flow: row;
         flex-wrap: wrap;
-        /*justify-content: space-between;*/
-        /*gap: 41px;*/
+        gap: 41px;
     }
 }
 
@@ -1260,7 +1245,6 @@ input:focus {
     .articles__item {
         flex-basis: 100%;
         margin-left: -2px;
-        /*max-width: 393px;*/
     }
 }
 
@@ -1309,7 +1293,13 @@ input:focus {
 }
 
 .snippet__tags {
-    padding: 8px 0 9px;
+    padding: 7px 0 9px;
+}
+
+@media screen and (min-width: 641px) {
+    .snippet__tags {
+        padding-top: 8px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1327,7 +1317,7 @@ input:focus {
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
     .snippet__tag {
-        margin-right: 15px;
+        margin-right: 19px;
     }
 }
 
@@ -1335,8 +1325,6 @@ input:focus {
     .snippet__tag {
         margin-top: 0;
         margin-right: 18px;
-
-        /*line-height: 0;*/
     }
 }
 
@@ -1364,7 +1352,7 @@ input:focus {
     display: flex;
     gap: 13px;
     margin-top: 19px;
-    margin-bottom: 19px;
+    margin-bottom: 17px;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
@@ -1641,6 +1629,12 @@ input:focus {
     margin-top: 18px;
 }
 
+@media screen and (max-width: 640px) {
+    .subscribe-form__button {
+        font-size: 0.875rem;
+    }
+}
+
 @media screen and (min-width: 641px) {
     .subscribe-form__button {
         height: 48px;
@@ -1760,7 +1754,7 @@ input:focus {
 
 @media screen and (min-width: 1200px) {
     .topics .header {
-        margin-top: 53px;
+        margin-top: 52px;
     }
 }
 
@@ -1831,7 +1825,7 @@ input:focus {
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
     .shop .section__header {
-        margin-top: 45px;
+        margin-top: 44px;
         margin-bottom: 4px;
     }
 
@@ -1853,14 +1847,12 @@ input:focus {
 .shop__content-container {
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: left;*/
     gap: 26px;
     width: 100%;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1199px) {
     .shop__content-container {
-        /*justify-content: left;*/
         gap: 22px;
     }
 }
@@ -1923,7 +1915,7 @@ input:focus {
 @media screen and (min-width: 641px) and (max-width: 1199px) {
     .shop__card {
         box-sizing: border-box;
-        /*max-width: 337px;*/
+        margin: -37px auto 0;
         min-height: 264px;
     }
 }
