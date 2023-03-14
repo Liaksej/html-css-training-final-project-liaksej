@@ -900,7 +900,7 @@ input:focus {
 }
 
 @media screen and (min-width: 641px) {
-    .main .section-heading::after {
+    .main-section .section-heading::after {
         padding-top: 7px;
     }
 }
